@@ -48,5 +48,14 @@ namespace estudo.Repositories
             await _context.SaveChangesAsync();
         }
 
+        Task<Book> IBookRepository.Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        Task<Book> IBookRepository.Update(Book book)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
